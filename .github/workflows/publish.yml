@@ -1,11 +1,12 @@
 name: Publish
 on:
-  push:
+  release:
+    types: [released]
 
 env:
   REGISTRY:   ghcr.io
   IMAGE_NAME: ghcr.io/${{ github.repository }}
-  IMAGE_TAG:  "test"
+  IMAGE_TAG:  ${{ github.event.release.tag_name }}
 
 
 jobs:
