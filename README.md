@@ -1,1 +1,3 @@
-# lectorium-vakshuddhi
+# Lectorium Vakshuddhi
+
+Lectorium Vakshuddhi is an audio processing service designed to clean and enhance voice recordings. The name "Vakshuddhi" is derived from the Sanskrit words Vak (वाक्), meaning "speech," and Shuddhi (शुद्धि), meaning "purification." This signifies the service’s purpose of purifying and refining spoken audio. Lectorium Vakshuddhi removes background noise, normalizes volume levels, and makes speech clearer, ensuring a high-quality listening experience.
