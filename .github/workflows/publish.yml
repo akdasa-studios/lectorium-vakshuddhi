@@ -1,12 +1,11 @@
 name: Publish
 on:
-  release:
-    types: [released]
+  push:
 
 env:
   REGISTRY:   ghcr.io
   IMAGE_NAME: ghcr.io/${{ github.repository }}
-  IMAGE_TAG:  ${{ github.event.release.tag_name }}
+  IMAGE_TAG:  "test"
 
 
 jobs:
@@ -29,6 +28,9 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check free space
+        run: df -h
 
       - name: Build and push ${{ github.repository }}
         uses: docker/build-push-action@v4
