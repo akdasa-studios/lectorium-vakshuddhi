@@ -1,6 +1,14 @@
 FROM pytorch/pytorch:2.2.0-cuda12.1-cudnn8-devel
 
 # ---------------------------------------------------------------------------- #
+#                                     Meta                                     #
+# ---------------------------------------------------------------------------- #
+
+LABEL org.opencontainers.image.description="Audio enhancing service for the Lectorium project"
+LABEL org.opencontainers.image.source="https://github.com/akdasa-studios/lectorium"
+
+
+# ---------------------------------------------------------------------------- #
 #                             Install Dependencies                             #
 # ---------------------------------------------------------------------------- #
 
